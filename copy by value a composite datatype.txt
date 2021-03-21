@@ -1,0 +1,25 @@
+3. How to copy by value a composite datatype (array+objects).
+
+There are 3 ways to copy by value a  composite datatype:
+1. Using spread(. . .) operator
+2. Using Object.assing() method.
+3. Using JSON.parse() and JSON.stringify() methods.
+
+1. Using spread(. . .) operator:  
+   Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in the variable array where there is more than 1 values are expected. It allows us the privilege to obtain a list of    parameters from an array.Using spread will clone your object.
+ ex: 
+       var a = [1,2,3];
+       var b = [. . .a];
+
+2. Using Object.assing() method: 
+    The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
+ex:
+      var a = [1,2,3];
+      var b = Object.assign([],a);
+
+3. Using JSON.parse() and JSON.stringify() methods.
+    The JSON object, available in all modern browsers, has two useful methods to deal with JSON-formatted content: parse and stringify. JSON.parse() takes a JSON string and transforms it into a JavaScript object.         JSON.stringify() takes a JavaScript object and transforms it into a JSON string.
+ex: 
+     var a = [2,3,4];
+     var b = JSON.parse(JSON.stringify(a));
+      

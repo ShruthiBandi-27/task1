@@ -1,0 +1,10 @@
+Difference between copy by value and copy by reference.
+
+1. Copy by value: Only primitive data types like String,Number,Boolean perform copy by value.
+    Copy by reference: Non-primitive data types like arrays,objects perform copy by reference.
+
+2. Copy by value: when the variable with primitive data ,lets say it as actual variable(a) is assigned to some other variable(b)  , let b be the copied variable, i.e  if a=b , then value of b will be same has value of a, but b points to           new memory location, which is different from memory location of a. This approach is called as 'copy by value' where 2 variables become same by copying the value but in 2 seperate memory locations.
+   So here , if value of a is changed it does not affect the value of b.
+
+    Copy by reference: when varible with non-primitive data type like array , object (a)  is assigned to other variable (b) ,then memory location of a will be copied to b, but not the value of a. So, here the variables a,b will point to  
+    same memory location. So if the value a is changed , then the value of b will also get modified and vice-versa. This approach is called 'copy by reference'
